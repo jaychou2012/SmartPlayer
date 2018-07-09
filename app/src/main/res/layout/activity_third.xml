@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#000000">
+
+        <me.zuichu.smartplayer.player.VideoExoPlayer
+            android:id="@+id/videoExoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <me.zuichu.smartplayer.view.ControlView
+            android:id="@+id/controlView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <me.zuichu.smartplayer.view.SeekView
+        android:id="@+id/seekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
